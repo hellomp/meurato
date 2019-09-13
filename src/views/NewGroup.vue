@@ -5,10 +5,12 @@
       <h2 class="page-title">Novo grupo</h2>
     </header>
     <div class="container">
-      <input type="text" placeholder="Nome" v-model="name">
-      <input type="number" placeholder="Nº de ratos" v-model="quant">
-      <v-date-picker v-model="birthDate" :input-props='{placeholder:"Data do nascimento"}'/>
-      <button @click="saveGroup">Salvar</button>
+      <div class="input-container">
+        <input type="text" placeholder="Nome" v-model="name">
+        <input type="number" placeholder="Nº de ratos" v-model="quant">
+        <v-date-picker v-model="birthDate" :input-props='{placeholder:"Data do nascimento"}'/>
+        <button @click="saveGroup">Salvar</button>
+      </div>
     </div>
   </div>
 </template>

@@ -50,11 +50,17 @@ body {
     }
   }
 }
-.menu, .container, .table-container{
+.menu, .container{
   padding: 0 1rem;
   margin-top: 60px;
 }
-.container{
+.table-container{
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+  border-radius: 1rem;
+  overflow-x: auto;
+}
+.input-container{
   display: flex;
   flex-direction: column;
   input, select{
@@ -84,11 +90,10 @@ body {
   }
 }
 table{
-  background: #FFFFFF;
-  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-  border-radius: 1rem;
   border-collapse: collapse;
   font-size: 1rem;
+  display: inline-table;
+  width: 100%;
   th{
     padding-right: 16px;
     padding-left: 16px;
@@ -104,9 +109,8 @@ table{
     border-right-color: rgba(0,0,0,.12);
     border-right-width: 1px;
     border-right-style: solid;
-    
     input{
-      width: 48px;
+      width: 32px;
       padding-right: 16px;
       padding-left: 16px;
       text-align: center;

@@ -6,29 +6,31 @@
     </header>
     <div class="container">
       <v-calendar is-expanded :attributes='attrs'/>
+      <div class="table-container">
       <table>
-      <thead>
-        <th></th>
-        <th>Data</th>
-        <th v-for="rat in rats" v-bind:key="rat.id">{{rat.ratNumber}}</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>02/10</td>
-          <td v-for="rat in rats" v-bind:key="rat.id">
-            {{rat.weight.day1}}
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>02/10</td>
-          <td v-for="rat in rats" v-bind:key="rat.id">
-            {{rat.weight.day2}}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        <thead>
+          <th></th>
+          <th>Data</th>
+          <th v-for="rat in rats" v-bind:key="rat.id">{{rat.ratNumber}}</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day1}}
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day2}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
     </div>
   </div>
 </template>
