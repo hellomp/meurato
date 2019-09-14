@@ -7,9 +7,9 @@
       <h2 class="page-title">Grupos</h2>
     </header>
     <div class="menu">
-      <div class="menu-item" v-for="group in groups" v-bind:key="group.id" @click="openGroup(group.id, $route.params.destiny)">
+      <div class="menu-item" :class="group.name" v-for="group in groups" v-bind:key="group.id" @click="openGroup(group.id, $route.params.destiny)">
         <div class="menu-label">
-          {{group.name}}
+          {{group.name}}-{{group.number}}
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ export default {
       db.collection("groups").get().then((querySnapshot) => {
         let groups=[]
         querySnapshot.forEach(doc => {
-          groups.push({id: doc.id, name: doc.data().name})
+          groups.push({id: doc.id, name: doc.data().name, number: doc.data().number})
         })
         this.groups = groups
         console.log(groups)

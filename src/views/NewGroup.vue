@@ -21,11 +21,11 @@
           <label for="name">Nome</label>
         </div>
         <div class="input-wrapper">
-          <input id="groupNumber" type="number" placeholder=" " v-model="groupNumber" required>
+          <input id="groupNumber" type="number" placeholder=" " v-model.number="number" required>
           <label for="groupNumber">Nº do grupo</label>
         </div>
         <div class="input-wrapper">
-          <input id="quant" type="number" placeholder=" " v-model="quant">
+          <input id="quant" type="number" placeholder=" " v-model.number="quant">
           <label for="quant">Nº de ratos</label>
         </div>
         <div class="input-wrapper">
@@ -48,7 +48,7 @@ export default {
     return{
       name: 'BPA1',
       quant: '',
-      groupNumber: '',
+      number: '',
       birthDate: new Date(),
       attrs:[
         {
@@ -92,10 +92,11 @@ export default {
       this.$router.push({name: 'groups', params: {destiny: 'group'}})
     },
     saveGroup(){
-      if(this.name !== "" && this.groupNumber !== ""){
+      if(this.name !== "" && this.number !== "" && this.birthDate !== ""){
         let vm = this
         db.collection('groups').add({
           name: this.name,
+          number: this.number,
           quant: this.quant,
           birthDate: this.birthDate
         })
@@ -143,8 +144,7 @@ export default {
             day27: '',
             day28: '',
             day29: '',
-            day30: ''
-            
+            day30: ''   
           }
         })
         .then(() => {

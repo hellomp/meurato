@@ -4,11 +4,11 @@
       <h2 class="page-title">Menu</h2>
     </header>
     <div class="menu">
-      <div class="menu-item" @click="openItem('weight')">
+      <div class="menu-item default" @click="openItem('weight')">
         <img src="../assets/Weight.svg" alt="">
         <div class="menu-label">Peso</div>
       </div>
-      <div class="menu-item" @click="openItem('group')">
+      <div class="menu-item default" @click="openItem('group')">
         <img src="../assets/Rat.svg" alt="">
         <div class="menu-label">Grupos</div>
       </div>

@@ -12,6 +12,25 @@
 }
 body {
   background: #E9EDF0;
+  margin: auto;
+}
+@media only screen and (min-width: 600px) {
+  body{
+    width: 70%;
+  }
+  header{
+    width: 70vw !important;
+    margin-left: 15vw;
+  }
+}
+@media only screen and (min-width: 768px){
+  body{
+    width: 50%;
+  }
+  header{
+    width: 50vw !important;
+    margin-left: 25vw;
+  }
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -36,20 +55,50 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(-20deg, #4481eb 0%, #04befe 100%);
     box-shadow: 0 6px 15px rgba(36,37,38,0.08);
     transition: box-shadow 0.25s ease;
     border-radius: 1rem;
     padding: 1rem 0 1rem 0;
     cursor: pointer;
+    background-image: linear-gradient(-20deg, #fdfbfb 0%, #f3f3f3 100%);
     img{
       width: 70%;
       padding: 0.5rem 0 1rem 0;
     }
     .menu-label{
-      color: #FFFFFF;
+      color: #525659;   
       font-size: 1.5rem;
       font-weight: bold;
+    }
+  }
+  .default{
+    background-image: linear-gradient(-20deg, #4481eb 0%, #04befe 100%);
+    .menu-label{
+      color: #FFFFFF;
+    }
+  }
+  .Se{
+    background-image: linear-gradient(-20deg, #4481eb 0%, #04befe 100%);
+    .menu-label{
+      color: #FFFFFF;
+    }
+  }
+  .BPA1, .BPA2{
+    background-image: linear-gradient(-20deg, #FF4B2B 0%, #fe5196 100%);
+    .menu-label{
+      color: #FFFFFF;
+    }
+  }
+  .CT{
+    background-image: linear-gradient(-20deg, #11998e 0%, #38ef7d 100%);
+    .menu-label{
+      color: #FFFFFF;
+    }
+  }
+  .OM{
+    background-image: linear-gradient(-20deg, #F7971E 0%, #FFD200 100%);
+    .menu-label{
+      color: #FFFFFF;
     }
   }
 }
