@@ -7,7 +7,9 @@
       <h2 class="page-title">{{group.name}} - {{group.quant}} animais</h2>
     </header>
     <div class="container">
+      <h3 class="page-label">Calendário</h3>
       <v-calendar is-expanded :attributes='attrs' class="custom-calendar"/>
+      <h3 class="page-label">Pesos</h3>
       <div class="table-container">
       <table>
         <thead>
@@ -28,6 +30,195 @@
             <td>02/10</td>
             <td v-for="rat in rats" v-bind:key="rat.id">
               {{rat.weight.day2}}
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day3}}
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day4}}
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day5}}
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day6}}
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day7}}
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day8}}
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day9}}
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day10}}
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day11}}
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day12}}
+            </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day13}}
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day14}}
+            </td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day15}}
+            </td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day16}}
+            </td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day17}}
+            </td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day18}}
+            </td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day19}}
+            </td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day20}}
+            </td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day21}}
+            </td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day22}}
+            </td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day23}}
+            </td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day24}}
+            </td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day25}}
+            </td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day27}}
+            </td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day28}}
+            </td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day29}}
+            </td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>02/10</td>
+            <td v-for="rat in rats" v-bind:key="rat.id">
+              {{rat.weight.day30}}
             </td>
           </tr>
         </tbody>

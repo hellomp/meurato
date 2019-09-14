@@ -10,18 +10,22 @@
   margin: 0;
   border: 0;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 body {
-  background: #F6F6F6;
+  background: #E9EDF0;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #525659;
+}
+h2{
+  font-size: 1.4rem;
+}
+h3{
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.5rem 0.5rem;
+  color: #878B8F;
 }
 .menu{
   display: grid;
@@ -61,11 +65,29 @@ body {
     margin-bottom: 1rem;
   }
 }
-.table-container{
-  background: #FFFFFF;
+.table-container-scroll{
+  background: #F8FAFB;
   box-shadow: 0 3px 6px rgba(36,37,38,0.08);
   border-radius: 1rem;
   overflow-x: auto;
+  height: calc(100vh - 60px - 1rem);
+  th{
+    position: sticky;
+    top: 0;
+  }
+}
+.table-container{
+  background: #F8FAFB;
+  box-shadow: 0 3px 6px rgba(36,37,38,0.08);
+  border-radius: 1rem;
+  overflow-x: auto;
+  height: 100%;
+  th{
+    height: 38px;
+  }
+  tr{
+    height: 42px;
+  }
 }
 .input-container{
   display: flex;
@@ -74,7 +96,7 @@ body {
     padding: 12px 16px 0px 16px;
     margin-bottom: 1rem;
     border: none;
-    background: #FFFFFF;
+    background: #F8FAFB;
     box-shadow: 0 3px 6px rgba(36,37,38,0.08);
     transition: box-shadow 0.25s ease;
     border-radius: 1rem;
@@ -82,6 +104,7 @@ body {
     position: relative;
 
     input, select {
+      background: #F8FAFB;
       height: 48px;
       outline: none;
       border: none;
@@ -91,7 +114,7 @@ body {
       width: 100%;
       padding: 0;
       box-shadow: none;
-      color: #989898;
+      color: #525659;
       transition: all .2s ease-out;
       -webkit-transition: all .2s ease-out;
       -moz-transition: all .2s ease-out;
@@ -103,7 +126,7 @@ body {
     label {
       //display: block;
       font-size: 1rem;
-      color: #989898;
+      color: #A9B3C8;
       pointer-events: none;
       position: absolute;
       top: 0;
@@ -132,7 +155,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     border: none;
-    color: #FFFFFF;
+    color: #F8FAFB;
     background-image: linear-gradient(-20deg, #4481eb 0%, #04befe 100%);
     box-shadow: 0 3px 6px rgba(36,37,38,0.08);
     transition: box-shadow 0.25s ease;
@@ -144,18 +167,24 @@ body {
   }
 }
 table{
+  border-spacing: 0;
   border-collapse: collapse;
   font-size: 1rem;
   text-align: center;
   display: inline-table;
   width: 100%;
+  //position: relative;
   th{
     padding-right: 16px;
     padding-left: 16px;
     height: 42px;
+    border-bottom-color: rgba(0,0,0,.12);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    background: #F8FAFB;
   }
   tr{
-    height: 52px;
+    height: 48px;
     border-top-color: rgba(0,0,0,.12);
     border-top-width: 1px;
     border-top-style: solid;
@@ -165,14 +194,12 @@ table{
     border-right-width: 1px;
     border-right-style: solid;
     input{
-      width: 32px;
-      padding-right: 16px;
-      padding-left: 16px;
+      width: 48px;
       text-align: center;
       font-size: 1rem;
       border: none;
       background: none;
-      height: 52px;
+      height: 48px;
     }
   }
   td:last-child{
@@ -188,6 +215,8 @@ header{
   top: 0;
   left: 0;
   box-sizing: border-box;
+  background: #E9EDF0;
+  z-index: 10;
   .back-button{
     height: 28px;
     width: 28px;
@@ -205,7 +234,7 @@ header{
     }
   }
   .page-title{
-    padding-left: 1rem;
+    padding-left: 0.8rem;
   }
 }
 .create-button{
