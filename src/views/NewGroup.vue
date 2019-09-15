@@ -49,42 +49,7 @@ export default {
       name: 'BPA1',
       quant: '',
       number: '',
-      birthDate: new Date(),
-      attrs:[
-        {
-          highlight: true,
-          dates: new Date(),
-          popover:{
-            label: 'Nascimento',
-            hideIndicator: true
-          }
-        },
-        {
-          highlight: 'green',
-          dates: null,
-          popover:{
-            label: 'Desmame',
-            hideIndicator: true
-          }
-        },
-        {
-          highlight: 'red',
-          dates: null,
-          popover:{
-            label: 'Coleta',
-            hideIndicator: true
-          }
-        }
-      ]
-    }
-  },
-  watch:{
-    birthDate(){
-      const attrs = this.attrs.slice()
-      attrs[0].dates = this.birthDate
-      attrs[1].dates = addDays(this.birthDate, 2)
-      attrs[2].dates = addDays(this.birthDate, 3)
-      this.attrs = attrs
+      birthDate: new Date()
     }
   },
   methods:{
